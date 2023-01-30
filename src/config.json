@@ -1,0 +1,20 @@
+{
+    "discord": {
+        "token": "MTA2NDUyMjYxNjkxMzgwOTQxOQ.GmiOnb.NR37DyeBayXPWbA6kgAi565MKCjBAxecCzyxm0",
+        "logChannel": "1065242016285466696",
+        "membercount": "1065248789755076628",
+        "membercounttext": "👥  𝗠𝗶𝘁𝗴𝗹𝗶𝗲𝗱𝗲𝗿: ",
+	"autorole": "1069343948373495918"
+    },
+    "mysql": {
+        "host": "192.168.178.31",
+        "user": "simpcity",
+        "password": "simp",
+        "database": "simpcity",
+        "port": 3306
+    },
+    "websocket": {
+        "port": 3080,
+        "password": "simpig"
+    }
+}
