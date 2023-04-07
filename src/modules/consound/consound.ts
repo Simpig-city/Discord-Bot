@@ -29,6 +29,7 @@ export async function ConSound(newState: discord.VoiceState, oldState: discord.V
     const connection = joinVoiceChannel({
         channelId: channelid,
         guildId: guildid,
+        // @ts-ignore
         adapterCreator: voiceAdapterCreator,
     })
 

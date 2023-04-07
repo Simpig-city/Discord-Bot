@@ -23,6 +23,7 @@ export async function start(interaction: discord.Interaction, client: discord.Cl
     connection = joinVoiceChannel({
         channelId: channelId,
         guildId: guildId,
+        // @ts-ignore
         adapterCreator: guild.voiceAdapterCreator,
     })
 

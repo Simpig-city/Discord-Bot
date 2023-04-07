@@ -208,7 +208,6 @@ export async function execute(interaction: discord.Interaction, client: discord.
             for(let i = 0; i < queue2.length; i++) {
                 if (i > 9) break;
                 const song = queue2[i];
-                console.log(song);
                 queueEmbed.addField(`Song ${i + 1}`, `**Titel:** ${song.title}\n**Künstler:** ${song.artist}\n**Link:** ${song.link}\n**Angefragt von:** <@${song.requester}>`);
             }
             interaction.reply({ embeds: [queueEmbed] });
