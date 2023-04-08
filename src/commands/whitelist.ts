@@ -65,11 +65,9 @@ export async function execute(interaction: discord.Interaction, client: discord.
 
         const jsonObj = {
             "type": "whitelistAdd",
-            "data": {
-                "uuid": uuid,
-                "name": mcName,
-                "server": server
-            }
+            "uuid": uuid,
+            "name": mcName,
+            "server": server
         }
 
         const success = await send(JSON.stringify(jsonObj));
