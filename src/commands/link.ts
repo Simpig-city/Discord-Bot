@@ -10,14 +10,6 @@ export const defaultMemberPermission = ['SEND_MESSAGES']
 export async function execute(interaction: discord.Interaction, client: discord.Client) {
 	if(!interaction.isCommand()) return;
 	const connection = await GetDB();
-    const [rows] = await connection.query(`SELECT * FROM linkedAccounts WHERE discordId = '${interaction.user.id}'`);
-
-    // Check if user is already linked
-    // @ts-ignore
-    if (rows.length > 0) {
-        interaction.reply({ content: 'Du hast deinen Account bereits verknüpft!', ephemeral: true });
-        return;
-    }
 
     // check if a code is already generated
     const [rows2] = await connection.query(`SELECT * FROM linkingCodes WHERE discordId = '${interaction.user.id}'`);

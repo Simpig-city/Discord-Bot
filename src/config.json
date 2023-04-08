@@ -14,7 +14,14 @@
         "port": 3306
     },
     "websocket": {
-        "port": 3080,
-        "password": "simpig"
+        "host": "localhost",
+        "port": 8080,
+        "password": "bfgdxkjnblvfgdbxkjnldxgf jhklgfd jkhlgfd jhbkfxdvybfghjfgdhjbgf dhb"
+    },
+    "minecraft": {
+        "servers": [
+            "lobby",
+            "simpcity"
+        ]
     }
 }

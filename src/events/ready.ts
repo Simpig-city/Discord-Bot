@@ -4,7 +4,7 @@ const { Connect } = require('../database/connectionhandler');
 const { Init } = require('../database/initilize');
 const { RegisterCommands } = require('../modules/commands/register');
 const { statsUpdater } = require('../modules/stats/statsupdater');
-const { WebSocket } = require('../modules/websocket/websocket');
+const { WSConnect } = require('../modules/websocket/websocket');
 
 const config = require('../config.json');
 const logChannelID = config.discord.logChannel;
@@ -21,7 +21,7 @@ export async function Ready(client: Client) {
     await Init();
     await RegisterCommands(client);
     await statsUpdater(client);
-    await WebSocket(client);
+    await WSConnect(client);
 
     const logChannel = client.channels.cache.get(logChannelID) as TextChannel;
     if(!logChannel) return;
